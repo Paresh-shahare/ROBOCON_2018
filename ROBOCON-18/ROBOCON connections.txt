@@ -1,0 +1,128 @@
+Autonomous MEGA
+
+  LS1
+         analog   A0
+         JP       A1
+         digsig   A2
+
+  LS2
+         analog   A3
+         JP       A4
+         digsig   A5
+
+  LS3
+         analog   A6
+         JP       A7
+         digsig   A15
+
+
+  MD1
+         dir1 9
+         pwm1 8
+         dir2 7
+         pwm2 6
+
+  MD2
+         dir3 2
+         pwm3 3
+         dir4 4
+         pwm4 5
+
+ throwhand  A8
+ TZ3        A9
+ TZ2  	    A10
+ TZ1  	    A11
+ echo1      23
+ trig1      25
+ echo2      27
+ trig2      29
+ sout       31
+ oe         35
+ s3         39
+ s2         43
+ s1         47
+ s0         51
+ 
+
+
+
+
+
+Manual MEGA
+
+PS2
+  #define PS2_DAT             25  
+  #define PS2_CMD             8  
+  #define PS2_SEL             9 
+  #define PS2_CLK             23
+
+MD1  
+  #define pwm1                 10
+  #define dir1                 43
+  #define pwm2                 11
+  #define dir2                 49
+  
+MD2 
+  #define pwm3                 13
+  #define dir3                 A5
+  #define pwm4                 12
+  #define dir4                 A4
+  
+relay (pneumatics)
+  #define peum1               A0
+  #define peum2               A1
+  
+L298N (1) 
+  #define in1                 29                 
+  #define in2                 31               
+  #define in3                 33
+  #define in4                 35
+  #define en1                 5
+  #define en2                 4
+
+L298N (2)
+  #define in5                 37                 
+  #define in6                 39                 
+  #define in7                 41
+  #define in8                 43
+  #define en3                 3
+  #define en4                 2
+
+
+
+
+Autonomos throwing arm NANO
+      #define laser 7
+      #define rel 9
+
+
+
+
+Autonomous UNO
+
+  laser emitter
+	la1  12
+	la2  13
+
+  autonomous mega digital signal pins
+	TZ1  2
+	TZ2  4
+	TZ3  7
+	throwend  8	
+
+  MD13s
+	dir  A4
+	pwm  9
+
+  L298N
+	EN1  11
+	EN2  10
+	in1  A3
+	in2  A2
+	in3  A1
+	in4  A0
+
+  servo
+	pwm1  3
+	pwm2  5
+
